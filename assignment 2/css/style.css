@@ -1,0 +1,235 @@
+/* Styling Home page for pizza ordering website */
+
+
+.about {
+  background-color: #333;
+}
+
+/* Styling for the header section */
+header {
+  height: 9.2em;
+  margin-top: 5px;
+  color: #000000;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 30% 60%;
+}
+
+header h1 {
+  color: #ccc;
+  font-family: 'Finger Paint', cursive;
+  font-size: 70px;
+  margin-top: 33px;
+}
+
+header div {
+  display: grid;
+  grid-template-rows: 36% 17%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the logo image in the header */
+body > header > div:nth-child(1) > img {
+  width: 100%;
+  height: 147px;
+  margin: auto;
+}
+
+/* Styling for the navigation menu in the header */
+header nav {
+  text-align: center; /* Center the navigation links for smaller screens */
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 62px;
+  display: flex;
+  justify-content: center;
+}
+
+header nav li {
+  display: block; /* Display the navigation links as blocks for better alignment */
+  margin-bottom: 10px; /* Add spacing between the navigation links for better readability */
+  font-size: 17px;
+}
+
+header nav a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 25px;
+}
+
+header nav a:hover {
+  color: GREY;
+}
+
+/* Styling for the h2 heading in the main section */
+body > h2 {
+  font-family: 'Amatic SC', cursive;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+/* Styling for the sample image in the main section */
+body > main > div > figure > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Styling for the welcome message in the main section */
+body > main > div:nth-child(1) > p {
+  font-family: cursive;
+  text-align: center;
+  color: rgb(51, 51, 51);
+  font-size: 55px;
+  margin: auto;
+}
+
+/* Main section styles */
+main {
+  padding: 2rem;
+}
+
+/* Styling for h2 headings in the main section */
+main h2 {
+  font-family: emoji;
+  font-size: 43px;
+  text-align: center;
+  color: #333;
+}
+
+/* Styling for paragraph elements in the main section */
+main p {
+  margin-bottom: 1rem;
+}
+
+/* Grid layout for the offers section */
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+/* Flexbox layout for the offer image and text */
+section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+/* Styling for offer images in the offers section */
+section div img {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+/* Styling for offer descriptions in the offers section */
+section div p {
+  font-family: 'Finger Paint', cursive;
+  font-size: 35px;
+}
+
+/* Styling for the "Order Now" button */
+main > nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+main > nav > a {
+  color: #fff;
+  background-color: #333;
+  border: none;
+  font-size: 30px;
+  padding: 0px 20px;
+  margin: auto;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for the "Order Now" button */
+main nav a:hover {
+  color: #ccc;
+}
+
+/* Styling for the footer section */
+body > footer > section {
+  display: inline;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hover effect for social media icons in the footer */
+body footer section.social-icons div i:hover {
+  color: darkred;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 786px) {
+  
+  /* Adjust the header section for smaller screens */
+  header div img {
+    height: 50%; /* Adjust the logo size for smaller screens */
+    width: 50%;
+  }
+
+  header h1 {
+    font-size: 20px; /* Adjust the font size of the heading for smaller screens */
+  }
+
+  header nav {
+    margin-top: 5px; /* Reduce the margin above the navigation links for smaller screens */
+  }
+
+  header nav li {
+    font-size: 10px;
+  }
+
+  header nav a {
+    padding: 5px; /* Reduce the padding of the links for smaller screens */
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  main div p {
+    font-size: 1.5em;
+  }
+
+  /* Adjust grid layout for smaller screens */
+  section {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  section div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Adjust font sizes for smaller screens */
+  main h2 {
+    font-size: 1.4rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+}
