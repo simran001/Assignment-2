@@ -1,7 +1,9 @@
+/* Styling order page using css*/
 .about {
     background-color: #333;
   }
   
+/* Styling header */
 header {
     height:9.2em;
     margin-top:5px;
@@ -28,6 +30,8 @@ body > header > div:nth-child(1) > img{
     margin: auto;
     
 }
+
+/* Styles for the navigation menu in the header */
 header nav {
     text-align: center; /* Center the navigation links for smaller screens */
 }
@@ -39,8 +43,8 @@ header nav ul {
     justify-content: center;
 }
 header nav li {
-    display: block; /* Display the navigation links as blocks for better alignment */
-    margin-bottom: 10px; /* Add spacing between the navigation links for better readability */
+    display: block; 
+    margin-bottom: 10px; 
     font-size: 17px;
 }
 header nav a {
@@ -52,6 +56,7 @@ header nav a {
 header nav a:hover {
     color: GREY;
 }
+/* Styles for the main heading */
   body > h2{
     font-family: 'Amatic SC', cursive;
     color: #333;
@@ -61,6 +66,8 @@ header nav a:hover {
     font-size: 55px;
 
   }
+
+  /* Styles for the pizza menu section */
   .pizza-menu {
     text-align: center;
     margin-top: 20px;
@@ -87,6 +94,7 @@ header nav a:hover {
     margin-top: 5px;
   }
   
+  /* Styles for the order form section */
   main form {
     max-width: 600px;
     margin: 0 auto;
@@ -123,6 +131,7 @@ header nav a:hover {
     cursor: pointer;
   }
 
+  /* Styles for the footer section */
   footer {
     background-color: #333;
     color: #fff;
@@ -148,6 +157,7 @@ header nav a:hover {
     color: #333;
   }
 
+  /* Styles for social media icons in the footer */
  footer section.social-icons  div  i:hover{
     color: darkred;
   }
@@ -213,6 +223,8 @@ header nav a:hover {
     color: #333;
   }
   
+  /* Media query for smaller screens */
+
   @media screen and (max-width: 600px) {
     header div img {
         height: 50%; /* Adjust the logo size for smaller screens */
